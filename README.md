@@ -100,12 +100,6 @@ http://localhost:8000
 * Support for multiple AI models
 * Better error handling
 
----
-
-## 👤 Author
-
-**Mo Emir**
-Software Developer | Web • Backend • Mobile • Systems
 
 GitHub:
 👉 [https://github.com/Mo-Emir369](https://github.com/Mo-Emir369)
