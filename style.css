@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: #1d2023;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+h2{
+    color: white;
+    font-size: 40;
+}
+
+.prompt{
+    background-color: #292c31;
+    padding: 5px;
+    width: 620px;
+    border: 3px solid #36383d;
+}
+input,button{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+input {
+    background-color: #292c31;
+    color: white;
+    width: 75%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* عند التركيز على الحقل */
+input:focus {
+    background-color: #292c31 !important;
+    color: white !important;
+}
+
+/* للملء التلقائي في Chrome وSafari */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #292c31 inset !important;
+    -webkit-text-fill-color: white !important;
+    background-color: #292c31 !important;
+}
+
+button{
+    background-color:#36383d ;
+    width: 20%;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #1d2023;
+}
+
+.imgs{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+}
+.imgs div{
+    height: 200px;
+    width: 200px;
+    background-color: #292c31;
+    border-radius: 10px;
+    border: 3px solid #36383d;
+    
+}
+
+.imgs div img{
+    width: 100%;
+}
