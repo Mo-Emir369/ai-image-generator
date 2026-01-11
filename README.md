@@ -35,7 +35,6 @@ Users can enter a text prompt and generate an AI image directly in the browser.
 ├── style.css       # Styling
 ├── script.js       # Frontend logic
 ├── generate.php    # Backend API (PHP)
-└── favicon.ico
 ```
 
 ---
@@ -114,6 +113,7 @@ http://localhost:8000/index.html
 ```
 A futuristic city at sunset, cyberpunk style, ultra detailed
 ```
+<p align="center"> <img src="./assets/example.png" width="600"> </p>
 
 ---
 
@@ -122,13 +122,3 @@ A futuristic city at sunset, cyberpunk style, ultra detailed
 * Never expose your API key in frontend JavaScript
 * Always keep API calls on the server (PHP)
 
----
-
-## 🔮 Future Improvements
-
-* Multiple image generation
-* Image download button
-* Loading animation
-* Prompt history
-* Negative prompts
-* Mobile responsiveness
