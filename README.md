@@ -132,12 +132,3 @@ A futuristic city at sunset, cyberpunk style, ultra detailed
 * Prompt history
 * Negative prompts
 * Mobile responsiveness
-
----
-
-## 📜 License
-
-This project is for **educational purposes**.
-You are free to use and modify it.*
-
-قولي و أضبطه لك 🔥
