@@ -1,106 +1,143 @@
+# 🖼️ AI Image Generator (Stable Diffusion XL)
 
-```md
-# 🖼️ AI Image Generator
+A simple **AI-powered image generation web app** built using **PHP, JavaScript, HTML, and CSS**, powered by **Hugging Face Stable Diffusion XL**.
 
-AI Image Generator is a simple web application that generates images using artificial intelligence based on a **text prompt** provided by the user.
-
-This project is built for practical learning and demonstrates **frontend, backend, and API integration** in a clean and understandable way.
+Users can enter a text prompt and generate an AI image directly in the browser.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- Generate images from text prompts
-- Simple and clean user interface
-- Asynchronous requests using Fetch API
-- PHP backend to securely handle API requests
-- Base64 image rendering in real time
-- Suitable as a portfolio or learning project
-
----
-
-## 🧠 How It Works
-
-1. The user enters a text prompt
-2. JavaScript sends the prompt to `generate.php`
-3. PHP forwards the request to the Hugging Face API
-4. The API returns the generated image
-5. The image is displayed instantly in the browser
+* Generate images from text prompts
+* Uses **Stable Diffusion XL** via Hugging Face Inference API
+* Simple and clean UI
+* Frontend & backend separated
+* No frameworks required
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-### Frontend
-- HTML5
-- CSS3
-- Vanilla JavaScript (Fetch API)
-
-### Backend
-- PHP
-- cURL
-
-### AI Service
-- Hugging Face Inference API
+* **PHP** (Backend API handler)
+* **JavaScript (Fetch API)**
+* **HTML5**
+* **CSS3**
+* **Hugging Face Inference API**
+* **Stable Diffusion XL**
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
-
-ai-image-generator/
-│
-├── index.html      # User interface
+```bash
+.
+├── index.html      # Frontend UI
 ├── style.css       # Styling
 ├── script.js       # Frontend logic
-├── generate.php    # Backend & API handler
-└── README.md
-
-````
+├── generate.php    # Backend API (PHP)
+└── favicon.ico
+```
 
 ---
 
-## ⚙️ Run Locally
+## ⚙️ Setup & Installation
 
 ### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/Mo-Emir369/ai-image-generator.git
-cd ai-image-generator
-````
 
-### 2️⃣ Start a local PHP server
+```bash
+git clone https://github.com/your-username/ai-image-generator.git
+cd ai-image-generator
+```
+
+### 2️⃣ Get Hugging Face API Token
+
+* Go to 👉 [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+* Create a **Read** token
+
+### 3️⃣ Configure API Key
+
+Open `generate.php` and replace:
+
+```php
+$API_KEY = "YOUR_HUGGINGFACE_TOKEN";
+```
+
+with:
+
+```php
+$API_KEY = "hf_xxxxxxxxxxxxxxxxx";
+```
+
+⚠️ **Important:**
+Do NOT upload your real API key to GitHub.
+Use `.env` or environment variables for production.
+
+---
+
+## ▶️ Run the Project
+
+You need a local PHP server.
+
+### Option 1: PHP built-in server
 
 ```bash
 php -S localhost:8000
 ```
 
-### 3️⃣ Open in your browser
+Then open:
 
 ```
-http://localhost:8000
+http://localhost:8000/index.html
+```
+
+### Option 2: XAMPP / WAMP
+
+* Place files in `htdocs`
+* Start Apache
+* Open in browser
+
+---
+
+## 🧠 How It Works
+
+1. User enters a text prompt
+2. Frontend sends prompt to `generate.php`
+3. PHP sends request to Hugging Face API
+4. Stable Diffusion XL generates image
+5. Image is returned as **Base64**
+6. Frontend displays the generated image
+
+---
+
+## 🖼️ Example Prompt
+
+```
+A futuristic city at sunset, cyberpunk style, ultra detailed
 ```
 
 ---
 
 ## 🔐 Security Notes
 
-* The API key is handled only on the backend
-* No sensitive keys are exposed to the frontend
-* Designed for learning and demonstration purposes
+* Never expose your API key in frontend JavaScript
+* Always keep API calls on the server (PHP)
 
 ---
 
-## 🚀 Future Improvements
+## 🔮 Future Improvements
 
-* Improved UI/UX
-* Loading indicator
 * Multiple image generation
-* Image history or download option
-* Support for multiple AI models
-* Better error handling
+* Image download button
+* Loading animation
+* Prompt history
+* Negative prompts
+* Mobile responsiveness
 
+---
 
-GitHub:
-👉 [https://github.com/Mo-Emir369](https://github.com/Mo-Emir369)
-قولي وأنا أكمّل معك 💪🔥
+## 📜 License
+
+This project is for **educational purposes**.
+You are free to use and modify it.*
+
+قولي و أضبطه لك 🔥
