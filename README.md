@@ -1,4 +1,4 @@
-# AI Image Generator
+# AI Image Generator (Stable Diffusion XL)
 
 A simple **AI-powered image generation web app** built using **PHP, JavaScript, HTML, and CSS**, powered by **Hugging Face Stable Diffusion XL**.
 
